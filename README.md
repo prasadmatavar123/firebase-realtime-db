@@ -185,10 +185,22 @@ Open the terminal in your Flutter project and run:
 flutter pub add firebase_core
 ```
 
-For Firebase Authentication:
+For Firebase Core:
 
 ```bash
-flutter pub add firebase_auth
+flutter pub add firebase_core
+```
+
+For Firebase firebase database:
+
+```bash
+flutter pub add firebase_database
+```
+
+For provider:
+
+```bash
+flutter pub add provider
 ```
 
 Alternatively, you can add them to `pubspec.yaml`:
@@ -199,7 +211,8 @@ dependencies:
     sdk: flutter
 
   firebase_core: ^4.15.0
-  firebase_auth: ^6.7.0
+  provider: ^6.1.5+1
+  firebase_database: ^12.6.0
 ```
 
 Then run:
