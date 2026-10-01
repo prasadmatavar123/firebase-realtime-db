@@ -1,17 +1,33 @@
-# firebase_realtime_db
+# Firebase Realtime Database
 
-A new Flutter project.
+### Step 1: Connect Your Flutter App to Firebase
 
-## Getting Started
+First, connect your Flutter application to your Firebase project.
 
-This project is a starting point for a Flutter application.
+### Step 2: Add Required Dependencies
 
-A few resources to get you started if this is your first Flutter project:
+Open the terminal in your Flutter project and run the following commands:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub add firebase_core
+flutter pub add firebase_database
+flutter pub add provider
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Step 3: Create a Realtime Database
+
+1. Open your project in the **Firebase Console**.
+2. Go to **Build → Realtime Database**.
+3. Click **Create Database**.
+4. Select your preferred database location.
+5. Select **Start in Test Mode**.
+6. Click **Enable**.
+
+### Step 4: Update Database Rules
+
+1. Go to the **Rules** tab in Realtime Database.
+2. Change the required rule value from `false` to `true`.
+3. Click **Publish** to save the changes.
+
+> **Note:** Test Mode allows read and write access for development. For a production application, configure secure Firebase Database Rules instead of keeping unrestricted access enabled.
+
